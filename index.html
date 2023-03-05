@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My BookList</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./images/booklists.jpg" alt="booklist" />
+        <h1>My BookList</h1>
+      </header>
+      <main>
+        <form class="form">
+          <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Enter your book name." />
+          </div>
+          <div>
+            <label for="author">Author</label>
+            <input type="text" id="author"  placeholder="Enter your book author." />
+          </div>
+          <div>
+            <label for="year">Year</label>
+            <input type="date" id="year" />
+          </div>
+          <button>Add Book</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="./JS/book.js"></script>
+    <script src="./JS/storage.js"></script>
+    <script src="./JS/ui.js"></script>
+    <script src="./JS/project.js"></script>
+  </body>
+</html>

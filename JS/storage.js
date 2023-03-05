@@ -1,0 +1,4 @@
+//Store Class
+class Storage {
+    
+}

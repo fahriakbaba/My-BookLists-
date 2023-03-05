@@ -1,0 +1,89 @@
+ @import "./partials/variables";
+ @import "./partials/utilities";
+ @import "./partials/mediaQueries";
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    color: map-get($colors, "dark");
+    padding: 5%;
+    width: 60%;
+    @include laptop {
+        width: 90%;
+    }
+    @include ipad {
+        width: 100%;
+        padding: 15% 1% 1% 1%;
+    }
+    @include mobile {
+        padding: 5% 1%;
+    }
+    margin: auto;
+    header {
+        @include flexAlign(flex-start, center, row);
+        gap: 1rem;
+        padding: .5% 3%;
+        @include mobile {
+            padding-top: 1%;
+            padding-left: 8%;
+        }
+    
+        img {
+            width: 150px;
+            mix-blend-mode: darken;
+            @include mobile {
+                width: 100px;
+            }
+        }
+
+        h1 {
+            font-size: map-get($fontSizes, x-large);
+            color: map-get($colors, dark);
+            @include mobile {
+                font-size: map-get($fontSizes, normal);
+            }
+        }
+    }
+
+    main {
+        form {
+            padding: .3rem 3rem;
+            @include mobile {
+                padding: .1rem 3rem;
+            }
+
+            div {
+                margin: .8rem 0;
+                @include flexAlign(flex-start, flex-start, column);
+                 
+                width: 100%;
+    
+                label, input {
+                    width: 100%;
+                    height: 2rem;
+                    @include mobile {
+                        font-size: map-get($fontSizes, small);
+                    }
+                    &::placeholder {
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+
+                input {
+                    padding: 4px 8px;
+                    border-radius: 3px;
+                    border: 1px solid black;
+                    &:focus {
+                        border: 1px solid map-get($colors, success);
+                    }
+                }
+            }
+            
+            button {
+                @extend %btn;
+                @include mobile {
+                    font-size: map-get($fontSizes, small);
+                }
+            }
+        }
+    }
+}

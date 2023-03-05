@@ -1,0 +1,8 @@
+@import "./variables";
+
+@mixin flexAlign($horizantal, $vertical, $direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $vertical;
+    justify-content: $horizantal;
+}
