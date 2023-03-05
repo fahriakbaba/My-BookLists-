@@ -199,6 +199,10 @@
   border-top: 2px solid #9FA6B2;
   font-weight: 600;
 }
+.container main .list-group .list-group-item:first-child:hover {
+  background-color: inherit;
+  color: inherit;
+}
 .container main .list-group .list-group-item:hover {
   color: #332D2D;
   background-color: #EEEEEE;

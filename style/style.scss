@@ -111,6 +111,10 @@
                 &:first-child {
                     border-top: 2px solid map-get($colors, secondary);
                     font-weight: 600;
+                    &:hover {
+                        background-color: inherit;
+                        color: inherit;
+                    }
                 }
                 &:hover {
                     color: map-get($colors, dark);
