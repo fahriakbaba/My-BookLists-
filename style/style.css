@@ -120,6 +120,11 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 768px) {
+  .container header h1 {
+    font-size: 1.5rem;
+  }
+}
 .container main form {
   padding: 0.3rem 3rem;
 }
@@ -142,6 +147,11 @@
 }
 @media (max-width: 480px) {
   .container main form div label, .container main form div input {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container main form div label, .container main form div input {
     font-size: 0.75rem;
   }
 }
@@ -163,4 +173,43 @@
   .container main form button {
     font-size: 0.75rem;
   }
+}
+.container main .list-group {
+  width: 100%;
+  list-style: none;
+  padding: 1.5rem 3rem;
+}
+@media (max-width: 480px) {
+  .container main .list-group {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container main .list-group {
+    font-size: 0.75rem;
+  }
+}
+.container main .list-group .list-group-item {
+  width: 100%;
+  padding: 3px 6px;
+  border-radius: 3px;
+  transition: color 0.3s, background-color 0.3s;
+}
+.container main .list-group .list-group-item:first-child {
+  border-top: 2px solid #9FA6B2;
+  font-weight: 600;
+}
+.container main .list-group .list-group-item:hover {
+  color: #332D2D;
+  background-color: #EEEEEE;
+}
+.container main .list-group .list-group-item td {
+  padding-left: 5px;
+}
+.container main .list-group .list-group-item .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
 }/*# sourceMappingURL=style.css.map */
