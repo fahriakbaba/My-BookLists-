@@ -190,7 +190,6 @@
   }
 }
 .container main .list-group .list-group-item {
-  width: 100%;
   padding: 3px 6px;
   border-radius: 3px;
   transition: color 0.3s, background-color 0.3s;
@@ -216,4 +215,16 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 5px;
+  gap: 0.5rem;
+}
+.container main .list-group .list-group-item .icons i:first-child {
+  color: #E4A11B;
+  cursor: pointer;
+}
+.container main .list-group .list-group-item .icons i:last-child {
+  color: #DC4C64;
+  cursor: pointer;
+}
+.container main .list-group .title-book {
+  width: 250px;
 }/*# sourceMappingURL=style.css.map */

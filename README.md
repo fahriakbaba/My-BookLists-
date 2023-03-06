@@ -6,6 +6,7 @@
 <li>OOP (ES6 Class)</li>
 <li>forEach</li>
 <li>localStorage</li>
+<li>Font Awesome</li>
 </ul>
 
 <p>was used by developing this project.</p>

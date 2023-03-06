@@ -103,7 +103,6 @@
             }
             
             .list-group-item {
-                width: 100%;
                 padding: 3px 6px;
                 border-radius: 3px;
                 transition: color .3s, background-color .3s;
@@ -127,8 +126,23 @@
                 .icons {
                     @include flexAlign(flex-end, center, row);
                     padding-right: 5px;
+                    gap: .5rem;
+                    i:first-child {
+                        color: map-get($colors, warning);
+                        cursor: pointer;
+                    }
+                    i:last-child {
+                        color: map-get($colors, danger);
+                        cursor: pointer;
+                    }
                 }
+            }
+            .title-book {
+                width: 250px;
             }
         }
     }
 }
+
+ 
+
