@@ -181,6 +181,7 @@
 }
 @media (max-width: 480px) {
   .container main .list-group {
+    max-width: 480px;
     font-size: 0.5rem;
   }
 }
@@ -226,5 +227,13 @@
   cursor: pointer;
 }
 .container main .list-group .title-book {
-  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .container main .list-group .title-book {
+    max-width: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */

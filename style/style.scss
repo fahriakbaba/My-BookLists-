@@ -96,6 +96,8 @@
             list-style: none;
             padding: 1.5rem 3rem;
             @include mobile {
+                max-width: 480px;
+                
                 font-size: map-get($fontSizes, x-small);
             }
             @include ipad {
@@ -138,7 +140,13 @@
                 }
             }
             .title-book {
-                width: 250px;
+                @include mobile {
+                    max-width: 100px;
+                }
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+                white-space: nowrap;
             }
         }
     }

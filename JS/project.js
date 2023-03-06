@@ -11,3 +11,9 @@ document.querySelector("#form").addEventListener("submit", (e) => {
     //clear value from UI
     UI.clearToUI(title, author, year); 
 });
+
+// delete event
+const handleDeleteClick = (obj) => {
+    console.log(obj);
+    UI.deleteToUI(obj);
+}

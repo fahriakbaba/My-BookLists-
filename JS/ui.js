@@ -12,7 +12,7 @@ class UI {
               <td>
                 <div class="icons">
                   <i class="fa-solid fa-pen-to-square"></i>
-                  <i class="fa-sharp fa-solid fa-trash"></i>
+                  <i class="fa-sharp fa-solid fa-trash" onclick="handleDeleteClick(this)"></i>
                 </div>
               </td>
             </tr>`
@@ -23,6 +23,11 @@ class UI {
       el1.value = "";
       el2.value = "";
       el3.value = "";
+    }
+
+    //delete item
+    static deleteToUI(element) {
+      element.parentElement.parentElement.parentElement.remove();
     }
 }
 
