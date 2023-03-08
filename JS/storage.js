@@ -1,4 +1,0 @@
-//Store Class
-class Storage {
-    
-}

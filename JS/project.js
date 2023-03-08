@@ -7,13 +7,16 @@ document.querySelector("#form").addEventListener("submit", (e) => {
     e.preventDefault();
     const newBook = new Book(title.value, author.value, year.value);
     UI.addToUI(newBook);
-    
+
     //clear value from UI
-    UI.clearToUI(title, author, year); 
+    UI.clearToUI(title, author, year);
 });
 
 // delete event
 const handleDeleteClick = (obj) => {
-    console.log(obj);
     UI.deleteToUI(obj);
+}
+
+const handleEditClick = (obj) => {
+    UI.editToUI(obj);
 }

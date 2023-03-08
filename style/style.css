@@ -16,10 +16,10 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #14A44D;
+  color: #FBFBFB;
   border: 2px solid #14A44D;
   padding: 4px 8px;
-  background-color: #FBFBFB;
+  background-color: #14A44D;
   border-radius: 4px;
   width: 100%;
   height: 2rem;
@@ -27,8 +27,8 @@
   transition: color 0.5s, background-color 0.7s, border 0.7s;
 }
 .container main form button:hover {
-  color: #FBFBFB;
-  background-color: #14A44D;
+  color: #14A44D;
+  background-color: #FBFBFB;
 }
 
 * {
@@ -47,10 +47,10 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #14A44D;
+  color: #FBFBFB;
   border: 2px solid #14A44D;
   padding: 4px 8px;
-  background-color: #FBFBFB;
+  background-color: #14A44D;
   border-radius: 4px;
   width: 100%;
   height: 2rem;
@@ -58,8 +58,8 @@
   transition: color 0.5s, background-color 0.7s, border 0.7s;
 }
 .container main form button:hover {
-  color: #FBFBFB;
-  background-color: #14A44D;
+  color: #14A44D;
+  background-color: #FBFBFB;
 }
 
 /*mobile */
@@ -193,10 +193,10 @@
 .container main .list-group .list-group-item {
   padding: 3px 6px;
   border-radius: 3px;
+  text-transform: capitalize;
   transition: color 0.3s, background-color 0.3s;
 }
 .container main .list-group .list-group-item:first-child {
-  border-top: 2px solid #9FA6B2;
   font-weight: 600;
 }
 .container main .list-group .list-group-item:first-child:hover {
@@ -208,7 +208,7 @@
   background-color: #EEEEEE;
 }
 .container main .list-group .list-group-item td {
-  padding-left: 5px;
+  text-indent: 5px;
 }
 .container main .list-group .list-group-item .icons {
   display: flex;

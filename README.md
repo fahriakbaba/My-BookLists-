@@ -4,8 +4,7 @@
 <li>Sass</li>
 <li>Google Fonts</li>
 <li>OOP (ES6 Class)</li>
-<li>forEach</li>
-<li>localStorage</li>
+<li>usage of static keyword in ES6 Class</li>
 <li>Font Awesome</li>
 </ul>
 

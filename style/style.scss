@@ -97,7 +97,6 @@
             padding: 1.5rem 3rem;
             @include mobile {
                 max-width: 480px;
-                
                 font-size: map-get($fontSizes, x-small);
             }
             @include ipad {
@@ -107,10 +106,10 @@
             .list-group-item {
                 padding: 3px 6px;
                 border-radius: 3px;
+                text-transform: capitalize;
                 transition: color .3s, background-color .3s;
 
                 &:first-child {
-                    border-top: 2px solid map-get($colors, secondary);
                     font-weight: 600;
                     &:hover {
                         background-color: inherit;
@@ -122,7 +121,7 @@
                     background-color: map-get($colors, listItemHoverColor);
                 }
                 td {
-                    padding-left: 5px;
+                    text-indent: 5px;
                 }
 
                 .icons {
