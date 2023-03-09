@@ -29,7 +29,7 @@ $colors :(
     "listItemHoverColor": #EEEEEE,
 );
 
-/*buttons */
+/*custom button  */
 %btn {
     margin-top: .8rem;
     font-size: .9rem;
@@ -49,5 +49,16 @@ $colors :(
     &:hover {
         color: map-get($colors, success);
         background-color: map-get($colors, light);
+    }
+}
+
+/*custom input */
+%input {
+    padding: 4px 8px;
+    border-radius: 3px;
+    border: 2px solid map-get($colors, secondary);
+    outline: none;
+    &:focus {
+        border: 2px solid map-get($colors, primary);
     }
 }

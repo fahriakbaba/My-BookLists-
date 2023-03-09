@@ -14,13 +14,15 @@ document.querySelector("#form").addEventListener("submit", (e) => {
 
     //error messsage
     if (title.value === "" || author.value === "" || year.value === "") {
-        alert("Please, enter empty fields.");
+        // alert("Please, enter empty fields.");
+        UI.showAlert("Please, fill empty fields", "danger");
         return;
     }
 
     const newBook = new Book(title.value, author.value, year.value);
     UI.addToUI(newBook);
     Storage.addBookToLS(newBook);
+    UI.showAlert("Book was added to BookList!", "success");
 
     //clear value from UI
     UI.clearToUI(title, author, year);
@@ -30,6 +32,7 @@ document.querySelector("#form").addEventListener("submit", (e) => {
 const handleDeleteClick = (obj) => {
     UI.deleteToUI(obj);
     Storage.deleteBookToLS(obj);
+    UI.showAlert("Book was deleted from BookList!", "danger");
 }
 
 const handleEditClick = (obj) => {

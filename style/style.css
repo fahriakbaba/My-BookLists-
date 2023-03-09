@@ -9,7 +9,7 @@
 /*to add font family*/
 /*font size */
 /*colors */
-/*buttons */
+/*custom button  */
 .container main form button {
   margin-top: 0.8rem;
   font-size: 0.9rem;
@@ -29,6 +29,17 @@
 .container main form button:hover {
   color: #14A44D;
   background-color: #FBFBFB;
+}
+
+/*custom input */
+.container main form div input {
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 2px solid #9FA6B2;
+  outline: none;
+}
+.container main form div input:focus {
+  border: 2px solid #3B71CA;
 }
 
 * {
@@ -40,7 +51,7 @@
 /*to add font family*/
 /*font size */
 /*colors */
-/*buttons */
+/*custom button  */
 .container main form button {
   margin-top: 0.8rem;
   font-size: 0.9rem;
@@ -60,6 +71,17 @@
 .container main form button:hover {
   color: #14A44D;
   background-color: #FBFBFB;
+}
+
+/*custom input */
+.container main form div input {
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 2px solid #9FA6B2;
+  outline: none;
+}
+.container main form div input:focus {
+  border: 2px solid #3B71CA;
 }
 
 /*mobile */
@@ -161,15 +183,6 @@
 .container main form div label::placeholder, .container main form div input::placeholder {
   font-family: "Poppins", sans-serif;
 }
-.container main form div input {
-  padding: 4px 8px;
-  border-radius: 3px;
-  border: 2px solid #9FA6B2;
-  outline: none;
-}
-.container main form div input:focus {
-  border: 2px solid #3B71CA;
-}
 @media (max-width: 480px) {
   .container main form button {
     font-size: 0.75rem;
@@ -237,4 +250,20 @@
   .container main .list-group .title-book {
     max-width: 100px;
   }
+}
+
+.alert {
+  margin: 0.3rem 3rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert-danger {
+  background-color: #DC4C64;
+  color: #FBFBFB;
+}
+
+.alert-success {
+  background-color: #14A44D;
+  color: #FBFBFB;
 }/*# sourceMappingURL=style.css.map */

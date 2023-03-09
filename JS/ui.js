@@ -68,6 +68,17 @@ class UI {
     });
   }
 
+  static showAlert(text, color) {
+    const div = document.createElement("div");
+    div.className= `alert alert-${color}`;
+    div.innerHTML = text;
+    const main = document.querySelector("main");
+    const form = document.querySelector("#form");
+    main.insertBefore(div, form);
 
+    setTimeout(()=> {
+      div.remove();
+    }, 1500)
+  }
 
 }

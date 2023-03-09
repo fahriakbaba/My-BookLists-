@@ -75,13 +75,7 @@
                 }
 
                 input {
-                    padding: 4px 8px;
-                    border-radius: 3px;
-                    border: 2px solid map-get($colors, secondary);
-                    outline: none;
-                    &:focus {
-                        border: 2px solid map-get($colors, primary);
-                    }
+                   @extend %input;
                 }
             }
             
@@ -150,6 +144,22 @@
             }
         }
     }
+}
+
+.alert {
+    margin: .3rem 3rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: map-get($colors, danger);
+    color: map-get($colors, light);
+}
+
+.alert-success {
+    background-color: map-get($colors, success);
+    color: map-get($colors, light);
 }
 
  
