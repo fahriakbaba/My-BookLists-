@@ -48,6 +48,26 @@ class UI {
     year.value = yearEdit;
     tr.remove();
     title.focus();
-}
+  }
+
+  //loadAllBooks
+  static loadAllBooks(allBooks) {
+    allBooks.forEach(book => {
+      document.querySelector("tbody").innerHTML += `
+        <tr class="list-group-item">
+              <td class="title-book">${book.title}</td>
+              <td>${book.author}</td>
+              <td>${book.year}</td>
+              <td>
+                <div class="icons">
+                  <i class="fa-solid fa-pen-to-square" onclick="handleEditClick(this)"></i>
+                  <i class="fa-sharp fa-solid fa-trash" onclick="handleDeleteClick(this)"></i>
+                </div>
+              </td>
+            </tr>`
+    });
+  }
+
+
 
 }

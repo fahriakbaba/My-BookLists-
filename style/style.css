@@ -167,7 +167,7 @@
   border: 1px solid black;
 }
 .container main form div input:focus {
-  border: 1px solid #14A44D;
+  border: 1px solid #3B71CA;
 }
 @media (max-width: 480px) {
   .container main form button {

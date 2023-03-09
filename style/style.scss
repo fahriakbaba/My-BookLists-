@@ -79,7 +79,7 @@
                     border-radius: 3px;
                     border: 1px solid black;
                     &:focus {
-                        border: 1px solid map-get($colors, success);
+                        border: 1px solid map-get($colors, primary);
                     }
                 }
             }
