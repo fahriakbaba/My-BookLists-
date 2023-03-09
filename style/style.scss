@@ -77,9 +77,10 @@
                 input {
                     padding: 4px 8px;
                     border-radius: 3px;
-                    border: 1px solid black;
+                    border: 2px solid map-get($colors, secondary);
+                    outline: none;
                     &:focus {
-                        border: 1px solid map-get($colors, primary);
+                        border: 2px solid map-get($colors, primary);
                     }
                 }
             }
@@ -153,3 +154,4 @@
 
  
 
+ 

@@ -164,10 +164,11 @@
 .container main form div input {
   padding: 4px 8px;
   border-radius: 3px;
-  border: 1px solid black;
+  border: 2px solid #9FA6B2;
+  outline: none;
 }
 .container main form div input:focus {
-  border: 1px solid #3B71CA;
+  border: 2px solid #3B71CA;
 }
 @media (max-width: 480px) {
   .container main form button {
