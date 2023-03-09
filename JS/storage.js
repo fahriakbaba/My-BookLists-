@@ -22,17 +22,12 @@ class Storage {
     static deleteBookToLS(book) {
         console.log("deleted book: ", book);
         const deleteBook = book.parentElement.parentElement.parentElement.children[0].innerHTML;
-        console.log(deleteBook);
         const books = Storage.getBooksFromLS();
-        console.log("1", books);
         books.forEach((book, i) => {
             if (book.title === deleteBook) {
                 books.splice(i, 1);
-                console.log("2", books);
             }
-            console.log("3", books);
         })
-        console.log("4", books);
         localStorage.setItem("books", JSON.stringify(books));
     }
 

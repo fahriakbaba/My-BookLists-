@@ -6,6 +6,7 @@
 <li>OOP (ES6 Class)</li>
 <li>usage of static keyword in ES6 Class</li>
 <li>Font Awesome</li>
+<li>localStorage</li>
 </ul>
 
 <p>was used by developing this project.</p>
