@@ -266,4 +266,9 @@
 .alert-success {
   background-color: #14A44D;
   color: #FBFBFB;
+}
+
+.alert-warning {
+  background-color: #E4A11B;
+  color: #FBFBFB;
 }/*# sourceMappingURL=style.css.map */

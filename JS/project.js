@@ -15,7 +15,7 @@ document.querySelector("#form").addEventListener("submit", (e) => {
     //error messsage
     if (title.value === "" || author.value === "" || year.value === "") {
         // alert("Please, enter empty fields.");
-        UI.showAlert("Please, fill empty fields", "danger");
+        UI.showAlert("Please, fill empty fields", "warning");
         return;
     }
 
@@ -38,4 +38,5 @@ const handleDeleteClick = (obj) => {
 const handleEditClick = (obj) => {
     UI.editToUI(obj);
     Storage.deleteBookToLS(obj);
+    UI.showAlert("The book is edited!", "warning");
 }

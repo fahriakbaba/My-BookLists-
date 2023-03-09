@@ -162,6 +162,11 @@
     color: map-get($colors, light);
 }
 
+.alert-warning {
+    background-color: map-get($colors, warning);
+    color: map-get($colors, light);
+}
+
  
 
  
